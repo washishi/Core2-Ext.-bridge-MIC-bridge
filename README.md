@@ -1,9 +1,13 @@
 # Core2-Ext. bridge & MIC bridge
 
- <img src="./docs/images/Core2_Ext._bridge.JPG" width="45%" />
- <img src="./docs/images/MIC._bridge.JPG" width="45%" />
- <img src="./docs/images/front.JPG" width="45%" />
- <img src="./docs/images/cut.JPG" width="45%" />
+ <p align="center"> 
+ <img src="./docs/images/Core2_Ext._bridge.JPG" width="30%" />
+ <img src="./docs/images/MIC._bridge.JPG" width="30%" />
+ </p>
+ <p align="center"> 
+ <img src="./docs/images/front.JPG" width="30%" />
+ <img src="./docs/images/CUT.JPG" width="30%" />
+ </p>
 
 ## 概要
 主にRT版ｽﾀｯｸﾁｬﾝにおいて利用できる下記基板(フレキシブル基板)のKiCad7.0で作成したデータです  
@@ -12,18 +16,18 @@
 * Core2-Ext. brige
   * [M5Core2](https://docs.m5stack.com/ja/core/core2) の CORE2 Expansion board を接続してマイクとIMUが使える様にします(はんだ付け不要)  
   * CORE2専用です (BASIC系では取り付けたCORE2 Expansion boardが物理的に干渉するため利用できません)  
-  * ｽﾀｯｸﾁｬﾝ基板以外でも物理的に干渉しなければ使えます(FACESに付けたりもできます)
+  * ｽﾀｯｸﾁｬﾝ基板以外でも物理的に干渉しなければ使えると思います
   
 * MIC brige
   * CORE S3以外のM5Stackを利用する場合にPDMマイクを内蔵で追加します
-  * ｽﾀｯｸﾁｬﾝ基板以外でも物理的に干渉しなければ使えます(BASICボトムにマイクを追加したりもできます)
+  * ｽﾀｯｸﾁｬﾝ基板以外でも物理的に干渉しなければ使えると思います
   * マイクの接続先のGPIOはCORE2(for AWSも含む)と同じで下記になります  
   　MIC CLK：GPIO0  
   　MIC DAT：GPIO34  
     ※BASIC系で利用する場合はPORT-AにPDMマイクユニットを接続する場合とはGPIOが異なりますのでソースを変更してリコンパイルをする必要があります
 
   * 利用できることを確認しているマイクは[秋月電子](https://akizukidenshi.com/catalog/)で扱っている下記のどちらかになります  
-  (店舗在庫はあまりたくさん置いてない様なので通販で購入するか行く場合は事前にWebで在庫数確認したほうがいいかも)
+  (店舗在庫はあまりたくさん置いてないことがあるので通販で購入するか行く場合は事前にWebで在庫数確認したほうがいいかも)
     * SPH0641LU4H使用 超広帯域マイクモジュールキット  
       通販コード：K-15577  
       (クランプで挟みはんだ付け不要で取り付け または はんだ付けにより取り付け)  
@@ -93,15 +97,20 @@
 * Core2-Ext. brige
   * CORE2(無印)付属のCORE2 Expansion boardを取り付けるものです (※CORE2 Expansion boardのみの別売りはありません)   
   * CORE2 Expansion board に Core2-Ext. brige を写真の向きで合わせて定規等でできるだけ水平状態のまま奥まで押し込みます  
-    (この写真ではCore2-Ext. brigeの向きはCORE2 Expansion boardの文字の向きに合わせていますが　Core2-Ext. brigeのパターン的には逆さにしても裏返しても問題ないように作ってあります) 
-  * 繋げたものをさらにｽﾀｯｸﾁｬﾝ基板のピンヘッダに合わせて同様に定規等で奥まで押し込みます(ケースに基板が付いた状態で押し込みにくい場合はピンヘッダに合わせて載せてそのままずれないように注意しながらCORE2を上からはめてしまってもかまいません)
-  * 後は通常通りCORE2を取り付ければCORE2 Expansion boardのマイク/IMUが利用できるはずです (CORE2のファクトリーデモ等で確認してみてください)  
- <img src="./docs/images/Core2_Ext._bridge_1.JPG" width="30%" />
- <img src="./docs/images/Core2_Ext._bridge_2.JPG" width="30%" />
- <img src="./docs/images/Core2_Ext._bridge.JPG" width="30%" />
+    (この写真ではCore2-Ext. brigeの向きはCORE2 Expansion boardの文字の向きに合わせていますが　Core2-Ext. brigeのパターン的には逆さにしても裏返しても問題ないように作ってあります)
+    <p align="center"> 
+    <img src="./docs/images/Core2_Ext._bridge_1.JPG" width="30%" />  
+    <img src="./docs/images/Core2_Ext._bridge_2.JPG" width="30%" />
+    </p>
+   * 繋げたものをさらにｽﾀｯｸﾁｬﾝ基板のピンヘッダに合わせて同様に定規等で奥まで押し込みます(ケースに基板が付いた状態で押し込みにくい場合はピンヘッダに合わせて置いてそのままずれないように注意しながらCORE2を上からはめてしまってもかまいません)  
+   * 後は通常通りCORE2を取り付ければCORE2 Expansion boardのマイク/IMUが利用できるはずです (CORE2のファクトリーデモ等で確認してみてください)  
+    <p align="center"> 
+    <img src="./docs/images/Core2_Ext._bridge.JPG" width="30%" />  
+    </p>
+<br>  
 
-* MIC brige
-  * BASIC系やCORE2を利用する際に追加でPDMマイクを取り付けるものです   
+* MIC brige  
+  * BASIC系やCORE2を利用する際に追加でPDMマイクを取り付けるものです
   * はんだ付けなしで利用する場合
     * MIC brige以外に必要な物  
       * [秋月電子](https://akizukidenshi.com/catalog/)で扱っている
@@ -112,18 +121,31 @@
         ※透明のもありますが材質的に白のほうが加工しやすい様です   
         10mmで切断してフレキを基板に挟むクランプとして使います  
         (少量しか使わないので３Dプリンタで作成したり他の代用品を探してみてもいいかも)  
-<img src="./docs/images/MIC._bridge_1.JPG" width="60%" />  
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge_1.JPG" width="30%" /> 
+        </p>
+        
     * 取り付け  
       * MIC brigeとマイクモジュールの端子を接触するように合わせマイクモジュールを巻き込むようにしてマイクモジュール付属の細ピンヘッダを穴に刺して仮止めします(穴が小さめなので少し力をかけて押し込んでください)  
- <img src="./docs/images/MIC._bridge_2.JPG" width="60%" />
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge_2.JPG" width="30%" />
+        </p>
       * コの字形プラ棒のクランプを差し込みます   
-<img src="./docs/images/MIC._bridge_3.JPG" width="60%" />
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge_3.JPG" width="30%" />
+        </p>
       * 仮止めのピンヘッダを取り外しクランプを奥まで押し込みます 
-<img src="./docs/images/MIC._bridge_4.JPG" width="60%" />
-      * 後はｽﾀｯｸﾁｬﾝ基板のピンヘッダに合わせて定規等でできるだけ水平状態のまま押し込めば完成です  
-<img src="./docs/images/MIC._bridge_5.JPG" width="45%" />
-<img src="./docs/images/MIC._bridge.JPG" width="45%" />  
-<br>
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge_4.JPG" width="30%" />
+        </p>
+      * 後はｽﾀｯｸﾁｬﾝ基板のピンヘッダに合わせて定規等でできるだけ水平状態のまま押し込めば完成です(押し込みにくい場合はピンヘッダに合わせてフレキを置いて、ずれないように注意しながらそのままM5Coreを取り付けてください)  
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge_5.JPG" width="30%" />
+        </p>
+      * 完成  
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge.JPG" width="30%" />
+        </p>
   * はんだ付けして利用する場合  
     * MIC brige以外に必要な物は下記です  
       * [秋月電子](https://akizukidenshi.com/catalog/)で扱っている
@@ -132,18 +154,20 @@
       * はんだごて、はんだ、ニッパー、ラジオペンチ(ピンヘッダを利用する場合) 等
      * マイクユニット付属のピンヘッダを利用する場合　
        * まずマイクユニットのマイクの穴の方にピンが出る状態でピンヘッダをはんだ付けします(通常利用する場合と逆にピンが出る状態)
-       * その後ピンヘッダの黒い樹脂をラジオペンチ等で引き抜きます(そのまま利用するとBASIC系では背が高くなり干渉するので黒い樹脂は外してフレキとモジュールを密着させます) 
+       * その後ピンヘッダの黒い樹脂をラジオペンチ等で引き抜きます(そのまま利用するとBASIC系では背が高くなり干渉するので黒い樹脂を外してフレキとモジュールを密着させます) 
        * ピンヘッダのピンのついたマイクモジュールをフレキに刺してモジュールの基板とフレキが密着した状態ではんだだ付けします(ピンヘッダを刺す穴が小さめなので少し力をかけて押し込んでください)      
         * はんだ付け後ピンヘッダの飛び出した部分はニッパーでカットしてください
      * マイクユニット付属のピンヘッダを利用しない場合　
        * マイクユニットとフレキのランドに薄く予備はんだします
-       * マイクユニットをフレキに合わせ角からはんだごてを当てて両方のはんだを溶かして接続します  
+       * マイクユニットをフレキに合わせ角からはんだごてを当ててはんだを追加し両方のはんだを溶かして接続します  
        * あとははんだ付けしない場合と同様に取り付けます  
-<img src="./docs/images/MIC._bridge_6.JPG" width="30%" />
-<img src="./docs/images/MIC._bridge_7.JPG" width="30%" />
-<img src="./docs/images/MIC._bridge_8.JPG" width="30%" />  
- ※上の写真では余白に書いたｽﾀｯｸﾁｬﾝの絵の部分を切り取らずにそのまま残してます     
-<br>
+        <p align="center"> 
+         <img src="./docs/images/MIC._bridge_6.JPG" width="30%" />
+         <img src="./docs/images/MIC._bridge_7.JPG" width="30%" />
+         <img src="./docs/images/MIC._bridge_8.JPG" width="30%" />  
+        </p>  
+         ※上の写真では余白に書いたｽﾀｯｸﾁｬﾝの絵の部分を切り取らずにそのまま残してます  
+
   * マイクチップをリフローして取り付ける方法  
    ※以下の写真のフレキは旧バージョンでマイクの向き、パターン等が異なりますが制作方法は同様です
     * MIC brige以外に必要な物  
@@ -151,26 +175,37 @@
          超小型シリコンマイクロホン 超音波対応 SPH0641LU4H-1-8  
         通販コード：P-14730  
       * ヒートテーブル、クリームはんだ、ピンセット等  
-<img src="./docs/images/MIC._bridge_9.JPG" width="60%" />
+        <p align="center"> 
+        <img src="./docs/images/MIC._bridge_9.JPG" width="30%" />
     * リフロー手順  
       * ごく少量クリームはんだをマイクチップのランドに塗ります    
        ※写真の量だとクリームはんだが多すぎた様です   
-<img src="./docs/images/MIC._bridge_10.JPG" width="60%" />
+        <p align="center"> 
+         <img src="./docs/images/MIC._bridge_10.JPG" width="30%" />
+        </p>
       * ピンセットでマイクチップを載せます  
         その後ヒートテーブルで加熱してリフローします  
         (私の方では融点138℃の低温クリームはんだを使ったので150℃で10秒ほど加熱しました)
-<img src="./docs/images/MIC._bridge_11.JPG" width="60%" />
+        <p align="center"> 
+         <img src="./docs/images/MIC._bridge_11.JPG" width="30%" />
+        </p>
       * リフロー後多すぎたクリームはんだがはんだボールになってしまいました・・・  
         ピンセットの先等で擦って取れる範囲で取り除きます   
-<img src="./docs/images/MIC._bridge_12.JPG" width="60%" />
+        <p align="center"> 
+         <img src="./docs/images/MIC._bridge_12.JPG" width="30%" />
+        </p>
       * はんだボール除去後   
-<img src="./docs/images/MIC._bridge_13.JPG" width="60%" />
+        <p align="center"> 
+         <img src="./docs/images/MIC._bridge_13.JPG" width="30%" />
+        </p>
       * 後はｽﾀｯｸﾁｬﾝ基板のピンヘッダに刺して完成です  
         フレキの左側は不要なので切ってしまってもかまいません (今回配布するデータはマイクの端で切ってしまっても問題ない様にパターンが作ってあります)    
-<img src="./docs/images/MIC._bridge_14.JPG" width="60%" />
-<br>  
-<br>  
+        <p align="center"> 
+          <img src="./docs/images/MIC._bridge_14.JPG" width="30%" />
+        </p>
+        <br>  
+        <br>  
 ## スルーホールでピンヘッダに接続する仕組みについて
-　　ピンヘッダのピンは1辺0.8mmの角型になっています、その為対角では約0.83mmとなるので  
-    0.8mmのスルーホールに刺すことにより4つの角がスルーホールを広げて接触します  
-    ただし一度取り外すと穴が広がってしまう為接触不良となりやすいので再利用は難しいです
+  ピンヘッダのピンは1辺0.8mmの角型になっています、その為対角では約0.83mmとなるので  
+  0.8mmのスルーホールに刺すことにより4つの角がスルーホールを広げて接触します  
+  ただし一度取り外すと穴が広がって接触不良となりやすいので再利用は難しいです
